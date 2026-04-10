@@ -2,21 +2,103 @@
 <html lang="cs">
 <head>
     <meta charset="UTF-8">
-    <title>Moje Kodaň - Dokument</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projekt: Kodaň | Viktorie Šestáková</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .container {
+            max-width: 900px;
+            width: 100%;
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            color: #2c3e50;
+            border-bottom: 2px solid #e74c3c;
+            padding-bottom: 10px;
+            text-align: center;
+        }
+
+        .info-box {
+            background-color: #fdf2f2;
+            border-left: 5px solid #e74c3c;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+
+        .link-button {
+            display: inline-block;
+            background-color: #e74c3c;
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: bold;
+            transition: background 0.3s ease;
+            margin-bottom: 30px;
+        }
+
+        .link-button:hover {
+            background-color: #c0392b;
+        }
+
+        iframe {
+            border: 2px solid #ddd;
+            border-radius: 10px;
+            box-shadow: inset 0 2px 5px rgba(0,0,0,0.05);
+        }
+
+        .footer-link {
+            margin-top: 30px;
+            text-align: center;
+        }
+
+        .footer-link a {
+            color: #7f8c8d;
+            text-decoration: none;
+        }
+
+        .footer-link a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
 
-    <h1>Moje budoucí studium v Kodani</h1>
+    <div class="container">
+        <h1>Moje cesta do Kodaně</h1>
 
-    <p>
-        Více informací o škole najdete zde: 
-        <a href="https://www.cbs.dk/" target="_blank">Oficiální stránky Copenhagen Business School</a>
-    </p>
+        <div class="info-box">
+            <p>Tento projekt shrnuje mé zkušenosti z cestování a dobrovolnictví v Dánsku a mé ambice ke studiu na <strong>Copenhagen Business School</strong>.</p>
+        </div>
 
-    <iframe src="kodan.pdf" width="100%" height="600px"></iframe>
+        <div style="text-align: center;">
+            <a href="https://www.cbs.dk/" target="_blank" class="link-button">
+                Navštívit web CBS →
+            </a>
+        </div>
 
-    <br>
-    <a href="index.html">Zpět na úvodní stránku</a>
+        <iframe src="kodan.pdf" width="100%" height="700px"></iframe>
+
+        <div class="footer-link">
+            <a href="index.html">← Zpět na úvodní stránku</a>
+        </div>
+    </div>
 
 </body>
 </html>
